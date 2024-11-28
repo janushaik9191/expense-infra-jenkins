@@ -68,7 +68,7 @@ module "records" {
   records = [
     
     {
-      name    = "mysql-${var.environment}" #mysql-dev.daws81s.online
+      name    = "mysql-${var.environment}"
       type    = "CNAME"
       ttl     = 1
       records = [
@@ -77,5 +77,4 @@ module "records" {
       allow_overwrite = true
     },
   ]
-
 }
