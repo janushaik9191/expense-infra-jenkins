@@ -7,7 +7,7 @@ terraform {
   }
 
   backend "s3" {
-    bucket = "merjan-s3-remote-dev"
+    bucket = "meerjan-s3-remote-dev"
     key    = "expense-eks"
     region = "us-east-1"
     dynamodb_table = "meerjan-locking-dev"
