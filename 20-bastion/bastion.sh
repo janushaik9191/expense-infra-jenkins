@@ -70,6 +70,4 @@ curl -sS https://webinstall.dev/k9s | bash
 VALIDATE $? "K9S installation"
 
 #mysql
-sudo dnf install mysql-server
-sudo systemctl start mysqld
-sudo systemctl enable mysqld.
+sudo dnf install mysql -y
