@@ -1,7 +1,10 @@
 resource "aws_key_pair" "eks" {
   key_name   = "eks"
   # you can paste the public key directly or refer like this
-  public_key = file("~/.ssh/eks.pub")
+  
+  public_key = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQC650Rs7YAb4RjJeFAXC9vvDpw/Sx9db1JZlgrKuVMCt4BXqQ/hGb1++Jnfv6Tmd8qRFnVrcKqAXvemkcC1l8rFpJzpOZIdpkrFy8rrSIQIlgBVf7yx/JXDKQ8qkoPIciU/nNBzFQ+mRFXoPVY4B2ocah+73l66RSPi1e6uLdKBz8SrWGr1E94bfV8dClLQPFvcOGA10AogJG80iByN1xGQT1qLe5rNN1OvgjI0GjAHXKRgxAI3i9smHOyLLqSIgKWRBoGVlY32vVLNc5X/U7piXYHIUdeNay0Z+A7BnSj/ZH1naLWPbt9yayrzaCQMXvMY0KXpkRfYGBJ+k3ajBOFVJwfS3sJvxPEtijnubfbUyylv7ceN0f51KTNXEj5NuXpQ+PCG5u3mcMjdOAMG0BOFxDOVs+IwUh7Ot3pcr8s/IycRL04ieycnWkyY/l7gIjroM42IprNqystk+NzdUiQQVjMjMxPFfcpXnAOMkDl8zJ4ZdDMJ1n3hJOwiVsP7wQmbHbq1y8G/ou8YTaPhVRcjoE/2sXBXS5OwxdU9l5K3bDy2CMjiGRH9moHQij7f+FRrFiGPFNBvEKRdqrY1FuUAdQkV+tXwsPgf+/znR9Aoq5GZ/QNeQGrPXY83oOUbQEdAv3nknm45vby5KaaTaFXAGYq29BoriYzVnwGhcCuoCw== KONDA BABU@DESKTOP-5LLIV0L"
+
+  # public_key =file("~/.ssh/eks.pub")
   # ~ means windows home directory
 }
 
